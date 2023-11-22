@@ -30,6 +30,7 @@ def main():
     print(f'data2 is {data2}')
     print(f'data3 is {data3}')
 
+    # deep copy using `json` module methods
     data4 = json.loads(json.dumps(data1))
     data1[2].append(40)
     print()
