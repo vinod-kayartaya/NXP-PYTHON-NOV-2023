@@ -12,9 +12,9 @@ def main():
     ]
 
     admin_emp_names = [
-        emp.split(',')[1]
-        for emp in employees
-        if emp.split(',')[2] == 'ADMIN'
+        emp.split(',')[1]                   # what is collected
+        for emp in employees                # from where is it collected
+        if emp.split(',')[2] == 'ADMIN'     # only if this condition is met
     ]
 
     print(admin_emp_names)
