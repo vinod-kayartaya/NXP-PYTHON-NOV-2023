@@ -8,15 +8,15 @@ import argparse
 def main():
     parser = argparse.ArgumentParser(description='Converts a given file into an uppercase version of the same')
 
-    parser.add_argument('-f', '--input-file', help='Input filename')
-    parser.add_argument('-o', '--output-file', help='Output filename')
+    parser.add_argument('-f', '--input-file', help='Input filename', required=True)
+    parser.add_argument('-o', '--output-file', help='Output filename', required=True)
     args = parser.parse_args()
 
-    if args.input_file is None:
-        parser.error('Input file is missing')
+    # if args.input_file is None:
+    #     parser.error('Input file is missing')
 
-    if args.output_file is None:
-        parser.error('Output file is missing')
+    # if args.output_file is None:
+    #     parser.error('Output file is missing')
 
     try:
         with open(args.input_file) as f1:
