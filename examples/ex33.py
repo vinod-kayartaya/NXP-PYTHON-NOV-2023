@@ -4,7 +4,7 @@ Example of using inheritance in Python
 from my_utils import dir2
 
 
-class Person():
+class Person:
     def __init__(self, **kwargs):
         self.name = kwargs.get('name')
         self.email = kwargs.get('email')
