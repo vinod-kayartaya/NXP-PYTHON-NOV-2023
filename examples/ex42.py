@@ -21,6 +21,7 @@ def get_all_customers():
         print('Server did not respond with status code 200')
         return
     customers = response.json()
+    print('-'*90)
     print('{:<5}{:<20}{:<50}{:<15}'.format('ID', 'Name', 'Email', 'Phone'))
     print('-'*90)
     for each_customer in customers:
@@ -30,6 +31,7 @@ def get_all_customers():
             each_customer.get('email'),
             each_customer.get('phone'),
         ))
+    print('-'*90)
 
 
 if __name__ == '__main__':
