@@ -1,0 +1,16 @@
+http://localhost:4000/api/customers
+
+###
+
+GET /api/customers HTTP/1.1
+Host: localhost:4000
+Accept: application/json
+
+###
+
+POST /api/customers
+Host: localhost:4000
+Content-Type: application/json
+
+{"name":"John Doe","email":"johndoe@xmpl.com","phone":"9876512345"}
+

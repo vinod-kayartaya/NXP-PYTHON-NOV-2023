@@ -84,6 +84,7 @@ def display_and_accept(field, value):
     temp_input = input(f'Enter {field}: [{value}] ')
     return temp_input if temp_input else value
 
+
 def edit_customer_data():
     try:
         c_id = int(input('Enter customer id to edit: '))
